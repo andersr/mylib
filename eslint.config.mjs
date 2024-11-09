@@ -1,3 +1,3 @@
 import config from "@andersco/eslint-config-ts";
 
-export default config;
+export default [{ ignores: ["**/dist", "**/build", "tmp"] }, ...config];
