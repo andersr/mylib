@@ -1,0 +1,1 @@
+# Base eslint config
