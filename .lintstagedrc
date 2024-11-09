@@ -1,0 +1,4 @@
+{
+  "**/*.+(js|json|ts|tsx)": ["pnpm run lint:fix"],
+  "**/*.{js,jsx,ts,tsx,json,css,scss,md}": ["pnpm run format:fix"]
+}
