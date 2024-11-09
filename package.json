@@ -1,0 +1,21 @@
+{
+  "name": "@andersco/mylib",
+  "version": "0.0.1",
+  "description": "A collection of commonly used utils, components, and more.",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Anders Ramsay <anders@anders.co> (http://github.com/andersr)",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.17.0 < 21",
+    "pnpm": ">=9.12.3",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "packageManager": "pnpm@9.12.3",
+  "devDependencies": {
+    "husky": "^9.1.6"
+  }
+}
