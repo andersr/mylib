@@ -4,6 +4,7 @@
   "description": "A collection of commonly used utils, components, and more.",
   "scripts": {
     "dev": "pnpm run --if-present --parallel --stream dev",
+    "build": "pnpm --stream -r run build",
     "format": "prettier .",
     "format:check": "pnpm format --check",
     "format:fix": "pnpm format --write",

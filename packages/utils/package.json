@@ -1,0 +1,19 @@
+{
+  "name": "@andersco/utils",
+  "version": "0.0.1",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -w"
+  },
+  "devDependencies": {
+    "@andersco/tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}

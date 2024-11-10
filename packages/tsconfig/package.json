@@ -1,0 +1,17 @@
+{
+  "name": "@andersco/tsconfig",
+  "version": "0.1.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "description": "Shared typescript configs",
+  "author": "Anders Ramsay <anders@anders.co> (http://github.com/andersr)",
+  "license": "MIT",
+  "files": [
+    "base.json"
+  ],
+  "peerDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
