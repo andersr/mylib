@@ -11,6 +11,7 @@
     "docs": "react-docgen --pretty --failOnWarning -o ./app/data/components.json ../../packages/ui/src/components/**/*.tsx"
   },
   "dependencies": {
+    "@andersco/ui": "workspace:*",
     "@andersco/utils": "workspace:*",
     "@react-docgen/cli": "^2.0.4",
     "@remix-run/node": "^2.13.1",
