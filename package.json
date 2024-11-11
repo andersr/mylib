@@ -8,7 +8,7 @@
     "format": "prettier .",
     "format:check": "pnpm format --check",
     "format:fix": "pnpm format --write",
-    "lint": "eslint .",
+    "lint": "pnpm run --if-present --parallel --stream lint",
     "lint:fix": "pnpm lint --fix",
     "pre-commit": "lint-staged",
     "prepare": "husky"
@@ -24,7 +24,6 @@
   },
   "packageManager": "pnpm@9.12.3",
   "devDependencies": {
-    "@andersco/eslint-config-ts": "workspace:*",
     "@changesets/cli": "^2.27.9",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10"
