@@ -96,6 +96,9 @@ importers:
 
   packages/ui:
     dependencies:
+      material-symbols:
+        specifier: ^0.26.0
+        version: 0.26.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2069,6 +2072,9 @@ packages:
 
   map-or-similar@1.5.0:
     resolution: {integrity: sha512-0aF7ZmVon1igznGI4VS30yugpduQW3y3GkcgGJOp7d8x8QrizhigUxjI/m2UojsXXto+jLAH3KSz+xOJTiORjg==}
+
+  material-symbols@0.26.0:
+    resolution: {integrity: sha512-7WefpjuZLsXjE4MHlbi7QVca9y6M45YJws8oC3l7UITfpGDxVwEddQaaqYqtGMGVRFeBw/dIxmlazR5eeZH0rg==}
 
   memoizerific@1.11.3:
     resolution: {integrity: sha512-/EuHYwAPdLtXwAwSZkh/Gutery6pD2KYd44oQLhAvQp/50mpyduZh8Q7PYHXTCJ+wuXxt7oij2LXyIJOOYFPog==}
@@ -5168,6 +5174,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
 
   map-or-similar@1.5.0: {}
+
+  material-symbols@0.26.0: {}
 
   memoizerific@1.11.3:
     dependencies:

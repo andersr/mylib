@@ -17,10 +17,11 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "vite build --watch",
+    "dev": "VITE_FOO_TEST=true vite build --mode development --watch",
     "lint": "eslint ."
   },
   "dependencies": {
+    "material-symbols": "^0.26.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
