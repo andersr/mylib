@@ -1,6 +1,3 @@
-/**
- * A simple button component
- */
 export function Button({
   children,
   onClick,
@@ -9,7 +6,7 @@ export function Button({
   onClick: () => void;
 }) {
   return (
-    <button onClick={onClick} className="bg-slate-400 p-4">
+    <button onClick={onClick} className="border rounded py-2 px-8 bg-white">
       {children}
     </button>
   );

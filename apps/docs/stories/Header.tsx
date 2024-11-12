@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "./Button";
+import { Button } from "@andersco/ui";
 import "./header.css";
 
 type User = {
@@ -14,12 +14,7 @@ export interface HeaderProps {
   onCreateAccount?: () => void;
 }
 
-export const Header = ({
-  user,
-  onLogin,
-  onLogout,
-  onCreateAccount,
-}: HeaderProps) => (
+export const Header = ({ user, onLogin, onLogout }: HeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>
@@ -52,17 +47,17 @@ export const Header = ({
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            {onLogout && <Button onClick={onLogout}>Log out</Button>}
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button
+            {onLogin && <Button onClick={onLogin}>Log in</Button>}
+            {/* <Button
               primary
               size="small"
               onClick={onCreateAccount}
               label="Sign up"
-            />
+            /> */}
           </>
         )}
       </div>
