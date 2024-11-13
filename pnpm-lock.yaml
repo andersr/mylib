@@ -60,6 +60,9 @@ importers:
       '@storybook/blocks':
         specifier: ^8.4.2
         version: 8.4.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.2(prettier@2.8.8))
+      '@storybook/manager-api':
+        specifier: ^8.4.3
+        version: 8.4.3(storybook@8.4.2(prettier@2.8.8))
       '@storybook/react':
         specifier: ^8.4.2
         version: 8.4.2(@storybook/test@8.4.2(storybook@8.4.2(prettier@2.8.8)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.2(prettier@2.8.8))(typescript@5.6.3)
@@ -69,6 +72,9 @@ importers:
       '@storybook/test':
         specifier: ^8.4.2
         version: 8.4.2(storybook@8.4.2(prettier@2.8.8))
+      '@storybook/theming':
+        specifier: ^8.4.3
+        version: 8.4.3(storybook@8.4.2(prettier@2.8.8))
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -81,6 +87,12 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
+      chromatic:
+        specifier: ^11.18.1
+        version: 11.18.1
+      dotenv-cli:
+        specifier: ^7.4.2
+        version: 7.4.2
       postcss:
         specifier: ^8.4.49
         version: 8.4.49
@@ -823,6 +835,11 @@ packages:
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
+  '@storybook/manager-api@8.4.3':
+    resolution: {integrity: sha512-b09FHQLHrc3VGdodgV+EkA6V8VhpgadygDn9aVIXUULHXMQCfzzsSK9kiunFGVjH5r4BtdanucBXoBRFAi9D/g==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
   '@storybook/preview-api@8.4.2':
     resolution: {integrity: sha512-5X/xvIvDPaWJKUBCo5zVeBbbjkhnwcI2KPkuOgrHVRRhuQ5WqD0RYxVtOOFNyQXme7g0nNl5RFNgvT7qv9qGeg==}
     peerDependencies:
@@ -866,6 +883,11 @@ packages:
 
   '@storybook/theming@8.4.2':
     resolution: {integrity: sha512-9j4fnu5LcV+qSs1rdwf61Bt14lms0T1LOZkHxGNcS1c1oH+cPS+sxECh2lxtni+mvOAHUlBs9pKhVZzRPdWpvg==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
+  '@storybook/theming@8.4.3':
+    resolution: {integrity: sha512-ORQY2/C488ur5NkQYes6x+fO5rcyRMyh4uX3DlkNhCsA2CJ/Ik3WVGjprrDuLn+9S4+mtXfVUNfvN7xszlT1oA==}
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
@@ -1262,8 +1284,8 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  chromatic@11.18.0:
-    resolution: {integrity: sha512-3o9Frn1oIS1hFLsJxVH9yVJ1O7+TCYoyL7OZzUorL/DCYduhXr5LDSBfpUsp7EdCPb64ufkbyFzSRNbt/xy9kg==}
+  chromatic@11.18.1:
+    resolution: {integrity: sha512-hkNT9vA6K9+PnE/khhZYBnRCOm8NonaQDs7RZ8YHFo7/lh1b/x/uFMkTjWjaj/mkM6QOR/evu5VcZMtcaauSlw==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -1414,6 +1436,18 @@ packages:
 
   dom-accessibility-api@0.6.3:
     resolution: {integrity: sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w==}
+
+  dotenv-cli@7.4.2:
+    resolution: {integrity: sha512-SbUj8l61zIbzyhIbg0FwPJq6+wjbzdn9oEtozQpZ6kW2ihCcapKVZj49oCT3oPM+mgQm+itgvUQcG5szxVrZTA==}
+    hasBin: true
+
+  dotenv-expand@10.0.0:
+    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
+    engines: {node: '>=12'}
+
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -3234,7 +3268,7 @@ snapshots:
 
   '@chromatic-com/storybook@3.2.2(react@18.3.1)(storybook@8.4.2(prettier@2.8.8))':
     dependencies:
-      chromatic: 11.18.0
+      chromatic: 11.18.1
       filesize: 10.1.6
       jsonfile: 6.1.0
       react-confetti: 6.1.0(react@18.3.1)
@@ -3738,6 +3772,10 @@ snapshots:
     dependencies:
       storybook: 8.4.2(prettier@2.8.8)
 
+  '@storybook/manager-api@8.4.3(storybook@8.4.2(prettier@2.8.8))':
+    dependencies:
+      storybook: 8.4.2(prettier@2.8.8)
+
   '@storybook/preview-api@8.4.2(storybook@8.4.2(prettier@2.8.8))':
     dependencies:
       storybook: 8.4.2(prettier@2.8.8)
@@ -3798,6 +3836,10 @@ snapshots:
       storybook: 8.4.2(prettier@2.8.8)
 
   '@storybook/theming@8.4.2(storybook@8.4.2(prettier@2.8.8))':
+    dependencies:
+      storybook: 8.4.2(prettier@2.8.8)
+
+  '@storybook/theming@8.4.3(storybook@8.4.2(prettier@2.8.8))':
     dependencies:
       storybook: 8.4.2(prettier@2.8.8)
 
@@ -4292,7 +4334,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chromatic@11.18.0: {}
+  chromatic@11.18.1: {}
 
   ci-info@3.9.0: {}
 
@@ -4412,6 +4454,17 @@ snapshots:
   dom-accessibility-api@0.5.16: {}
 
   dom-accessibility-api@0.6.3: {}
+
+  dotenv-cli@7.4.2:
+    dependencies:
+      cross-spawn: 7.0.5
+      dotenv: 16.4.5
+      dotenv-expand: 10.0.0
+      minimist: 1.2.8
+
+  dotenv-expand@10.0.0: {}
+
+  dotenv@16.4.5: {}
 
   eastasianwidth@0.2.0: {}
 
