@@ -30,7 +30,6 @@ export const Primary: Story = {
 export const Styled: Story = {
   args: {
     name: "search",
-    twStyle: "text-red-500",
-    sizePx: "50px",
+    twStyle: "text-red-500 text-8xl",
   },
 };
