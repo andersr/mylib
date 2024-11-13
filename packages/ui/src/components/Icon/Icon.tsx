@@ -1,5 +1,8 @@
+import { twMerge } from "tailwind-merge";
 export interface IconProps {
   name: string;
+  twStyle?: string;
+  sizePx?: string;
 }
 
 /**
@@ -11,11 +14,14 @@ export interface IconProps {
  *
  */
 
-export function Icon({ name }: { name: string }) {
+export function Icon({ name, twStyle, sizePx }: IconProps) {
   return (
     <span
+      style={{
+        fontSize: sizePx,
+      }}
       title={name}
-      className={"material-symbols-outlined"}
+      className={twMerge("material-symbols-outlined", twStyle)}
       dangerouslySetInnerHTML={{ __html: name }}
     />
   );

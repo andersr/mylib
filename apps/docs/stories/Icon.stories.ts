@@ -26,3 +26,11 @@ export const Primary: Story = {
     name: "search",
   },
 };
+
+export const Styled: Story = {
+  args: {
+    name: "search",
+    twStyle: "text-red-500",
+    sizePx: "50px",
+  },
+};

@@ -29,22 +29,9 @@ export const Primary: Story = {
   },
 };
 
-// export const Secondary: Story = {
-//   args: {
-//     label: "Button",
-//   },
-// };
-
-// export const Large: Story = {
-//   args: {
-//     size: "large",
-//     label: "Button",
-//   },
-// };
-
-// export const Small: Story = {
-//   args: {
-//     size: "small",
-//     label: "Button",
-//   },
-// };
+export const Styled: Story = {
+  args: {
+    children: "Button Label",
+    twStyle: "bg-blue-500 text-white",
+  },
+};
