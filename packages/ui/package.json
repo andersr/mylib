@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "VITE_FOO_TEST=true vite build --mode development --watch",
+    "dev": "vite build --mode development --watch",
     "lint": "eslint ."
   },
   "dependencies": {
