@@ -4,7 +4,6 @@ import { resolve } from "path";
 import dts from "vite-plugin-dts";
 import tailwindcss from "tailwindcss";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
     build: {
