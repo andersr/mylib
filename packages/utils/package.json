@@ -11,7 +11,8 @@
     "build": "tsc && vite build",
     "check:types": "tsc --noEmit",
     "dev": "vite",
-    "test": "vitest"
+    "test": "vitest run",
+    "test:dev": "vitest"
   },
   "devDependencies": {
     "@andersco/tsconfig": "workspace:*",
