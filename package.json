@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "pnpm run --if-present --parallel --stream dev",
     "build": "pnpm --stream -r run build",
+    "check:types": "pnpm run --if-present --parallel --stream check:types",
     "format": "prettier .",
     "format:check": "pnpm format --check",
     "format:fix": "pnpm format --write",

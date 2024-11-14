@@ -1,4 +1,5 @@
 {
+  "**/*.+(ts|tsx)": ["pnpm run check:types"],
   "**/*.+(js|json|ts|tsx)": ["pnpm run lint:fix"],
   "**/*.{js,jsx,ts,tsx,json,css,md}": ["pnpm run format:fix"]
 }
