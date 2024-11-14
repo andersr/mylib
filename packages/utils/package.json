@@ -8,8 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "check:types": "tsc --noEmit",
+    "dev": "vite",
     "test": "vitest"
   },
   "devDependencies": {
