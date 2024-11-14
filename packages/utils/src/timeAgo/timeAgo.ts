@@ -23,7 +23,6 @@ dayjs.updateLocale("en", {
   },
 });
 
-export function timeAgo(dateString: string): string {
-  const date = new Date(dateString);
+export function timeAgo(date: Date): string {
   return dayjs(date).fromNow();
 }

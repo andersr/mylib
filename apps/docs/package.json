@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "storybook build -o build",
+    "check:types": "tsc --noEmit",
     "dev": "storybook dev -p 6006",
     "lint": "eslint .",
     "chromatic": "dotenv -- chromatic --build-script-name build --projectId=CHROMATIC_PROJECT_ID"

@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "pnpm run --if-present --parallel --stream dev",
     "build": "pnpm --stream -r run build",
+    "check:types": "pnpm run --if-present --parallel --stream check:types",
     "format": "prettier .",
     "format:check": "pnpm format --check",
     "format:fix": "pnpm format --write",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "pre-commit": "lint-staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "pnpm run --if-present --parallel --stream test",
+    "test:dev": "pnpm run --if-present --parallel --stream test:dev"
   },
   "keywords": [],
   "author": "Anders Ramsay <anders@anders.co> (http://github.com/andersr)",
