@@ -1,18 +1,9 @@
 {
   "extends": "@andersco/tsconfig/base.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "module": "ESNext",
-    "lib": ["ES2020"],
-    "moduleResolution": "bundler",
-    "typeRoots": ["./dist/index.d.ts", "node_modules/@types"],
-    "types": ["jest"]
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types"]
   },
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.test.*"]
+  "include": ["./src"]
 }
