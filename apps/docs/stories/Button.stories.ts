@@ -17,3 +17,10 @@ export const Primary: Story = {
     children: "Button Label",
   },
 };
+
+export const Styled: Story = {
+  args: {
+    children: "Button Label",
+    twStyle: "p-4 bg-blue-500 text-white",
+  },
+};
