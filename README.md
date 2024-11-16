@@ -1,17 +1,12 @@
-# AndersCo Workbench Monorepo
+# AndersCo Component and Utils Library
 
-This is a collection of TS utils and React components.
+This is a collection of React components and JS utils.
 
-## Setup
+## Getting Started
 
-- Set env vars
-- Other?
+- Be sure to have [pnpm](https://pnpm.io/) installed and that you are running Node [version 20.x](https://nodejs.org/en/about/previous-releases).
+- In the repo root, run `pnpm i`.
 
 ## Develop
 
-- Dev script
-- Other
-
-## Deploy
-
-- Add instructions
+- To update are add new components or utils, run `pnpm dev`. This will watch individual package source code for changes, and also start a Storybook playground app.
