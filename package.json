@@ -36,6 +36,8 @@
     "lint:inspect": "eslint . --inspect-config",
     "pre-commit": "lint-staged",
     "prepare": "husky",
+    "prepublish": "pnpm run build",
+    "publish": "p publish --dry-run --filter \"./packages/**\"",
     "test": "pnpm run --if-present --parallel --stream test",
     "test:dev": "pnpm run --if-present --parallel --stream test:dev"
   },
