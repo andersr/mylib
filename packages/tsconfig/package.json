@@ -1,19 +1,21 @@
 {
+  "author": "Anders Ramsay <anders@anders.co> (http://github.com/andersr)",
+  "description": "Shared typescript configs",
+  "files": [
+    "base.json",
+    "reactlib.json"
+  ],
+  "keywords": [
+    "typescript"
+  ],
+  "license": "MIT",
   "name": "@andersco/tsconfig",
-  "version": "0.1.3",
+  "peerDependencies": {
+    "typescript": "^5.1.6"
+  },
   "private": true,
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
-  "description": "Shared typescript configs",
-  "author": "Anders Ramsay <anders@anders.co> (http://github.com/andersr)",
-  "license": "MIT",
-  "files": [
-    "base.json",
-    "react-library.json"
-  ],
-  "peerDependencies": {
-    "typescript": "^5.1.6"
-  }
+  "version": "1.0.0"
 }
