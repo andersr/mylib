@@ -4,6 +4,7 @@ import { fn } from "@storybook/test";
 import { Button } from "@andersco/ui";
 
 const meta = {
+  title: "Components/Button",
   component: Button,
   parameters: {},
   args: { onClick: fn() },

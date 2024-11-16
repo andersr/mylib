@@ -1,18 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
-import { Icon } from "@andersco/ui";
+import { TimeAgoTest } from "./components/TimeAgo.tsx";
 
 const meta = {
-  title: "Components/Icon",
-  component: Icon,
+  title: "Utils/TimeAgo",
+  component: TimeAgoTest,
   parameters: {},
-} satisfies Meta<typeof Icon>;
+} satisfies Meta<typeof TimeAgoTest>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    name: "search",
+    isoDate: "2024-09-01",
   },
 };

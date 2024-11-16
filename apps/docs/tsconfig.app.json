@@ -2,13 +2,14 @@
   "extends": "@andersco/tsconfig/base.json",
   "include": ["stories", ".storybook"],
   "compilerOptions": {
-    "allowJs": true,
     "declaration": false,
     "declarationMap": false,
     "incremental": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "module": "Node16",
+    "moduleResolution": "node16",
     "noEmit": true,
     "target": "es6"
   }
