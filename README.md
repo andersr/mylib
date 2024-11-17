@@ -1,6 +1,6 @@
-# AndersCo Component and Utils Library
+# Coding workbench
 
-This is a collection of React components and JS utils.
+This is a monorepo where I collect, create, publish, and maintain commonly used code, such as React components and JS utils and more.
 
 ## Getting Started
 
