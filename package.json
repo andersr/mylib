@@ -24,6 +24,10 @@
   "license": "MIT",
   "name": "@andersco/mylib",
   "packageManager": "pnpm@9.12.3",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "pnpm --stream -r run build",
     "check:types": "pnpm run --if-present --parallel --stream check:types",
@@ -37,7 +41,7 @@
     "pre-commit": "lint-staged",
     "prepare": "husky",
     "prepublish": "pnpm run build",
-    "publish": "p publish --dry-run --filter \"./packages/**\"",
+    "publish:packages": "pnpm publish --filter \"./packages/**\"",
     "test": "pnpm run --if-present --parallel --stream test",
     "test:dev": "pnpm run --if-present --parallel --stream test:dev"
   },
