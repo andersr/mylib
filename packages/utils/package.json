@@ -1,17 +1,6 @@
 {
-  "name": "@andersco/utils",
-  "version": "1.0.0-rc0",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsc --watch",
-    "test": "vitest run",
-    "test:dev": "vitest"
+  "dependencies": {
+    "dayjs": "^1.11.13"
   },
   "devDependencies": {
     "@andersco/tsconfig": "workspace:*",
@@ -23,7 +12,18 @@
     "vite-plugin-dts": "^4.3.0",
     "vitest": "^2.1.5"
   },
-  "dependencies": {
-    "dayjs": "^1.11.13"
-  }
+  "files": [
+    "/dist"
+  ],
+  "main": "dist/index.js",
+  "name": "@andersco/utils",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:dev": "vitest"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "1.2.0"
 }
