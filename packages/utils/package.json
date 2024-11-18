@@ -6,7 +6,6 @@
     "@andersco/tsconfig": "workspace:*",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.9.0",
-    "dayjs": "^1.11.13",
     "typescript": "~5.6.2",
     "vite": "^5.1.4",
     "vite-plugin-dts": "^4.3.0",
@@ -25,5 +24,5 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "1.2.1"
+  "version": "1.2.2"
 }
