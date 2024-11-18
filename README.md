@@ -1,6 +1,6 @@
 # Coding workbench
 
-This is a monorepo where I collect, create, publish, and maintain commonly used code, such as React components and JS utils and more.
+This is a monorepo where I collect, create, publish, and maintain code I want to re-use across projects, such as React components and JS utils.
 
 ## Getting Started
 
