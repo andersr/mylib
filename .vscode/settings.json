@@ -1,4 +1,4 @@
 {
   "npm.packageManager": "pnpm",
-  "conventionalCommits.scopes": ["utils"]
+  "conventionalCommits.scopes": ["utils", "ui"]
 }

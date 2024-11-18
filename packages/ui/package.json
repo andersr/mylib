@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "material-symbols": "^0.26.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.4"
   },
   "description": "A collection of React components.",
@@ -36,9 +34,11 @@
     "tailwindcss"
   ],
   "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
   "name": "@andersco/ui",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/andersr/workbench"
