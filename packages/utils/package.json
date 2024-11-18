@@ -1,7 +1,4 @@
 {
-  "peerDependencies": {
-    "dayjs": "^1.11.13"
-  },
   "devDependencies": {
     "@andersco/tsconfig": "workspace:*",
     "@types/jest": "^29.5.14",
@@ -16,6 +13,13 @@
   ],
   "main": "dist/index.js",
   "name": "@andersco/utils",
+  "peerDependencies": {
+    "dayjs": "^1.11.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andersr/workbench"
+  },
   "scripts": {
     "build": "rm -rf dist/ && tsc -b",
     "dev": "tsc --watch",
