@@ -1,9 +1,9 @@
 {
   "extends": "@andersco/tsconfig/base.json",
   "compilerOptions": {
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "outDir": "./dist",
-    "typeRoots": ["./node_modules/@types"]
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo"
   },
   "include": ["./src"]
 }
