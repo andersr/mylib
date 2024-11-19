@@ -1,9 +1,9 @@
 {
-  "extends": "@andersco/tsconfig/base.json",
-  "compilerOptions": {
-    "moduleResolution": "bundler",
-    "outDir": "./dist",
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo"
-  },
-  "include": ["./src"]
+  "extends": "@andersco/tsconfig/reactlib.json",
+  "include": ["src"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

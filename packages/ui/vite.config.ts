@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       minify: mode !== "development",
       lib: {
         entry: resolve(__dirname, "./src/index.ts"),
-        name: "andersco-mylib",
+        name: "andersco-ui",
         fileName: (format) => `index.${format}.js`,
       },
       rollupOptions: {

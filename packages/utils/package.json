@@ -8,10 +8,16 @@
     "vite-plugin-dts": "^4.3.0",
     "vitest": "^2.1.5"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "/dist"
   ],
-  "main": "dist/index.js",
   "name": "@andersco/utils",
   "peerDependencies": {
     "dayjs": "^1.11.13"
@@ -21,12 +27,11 @@
     "url": "https://github.com/andersr/workbench"
   },
   "scripts": {
-    "build": "rm -rf dist/ && tsc -b",
-    "dev": "tsc --watch",
+    "build": "tsc && vite build",
+    "dev": "vite build --mode development --watch",
     "test": "vitest run",
     "test:dev": "vitest"
   },
   "type": "module",
-  "types": "dist/index.d.ts",
-  "version": "1.2.2"
+  "version": "1.2.3"
 }
