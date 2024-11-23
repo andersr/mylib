@@ -1,4 +1,11 @@
 {
   "npm.packageManager": "pnpm",
-  "conventionalCommits.scopes": ["utils", "ui"]
+  "conventionalCommits.scopes": ["utils", "ui"],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    ".*Styles"
+  ]
 }
