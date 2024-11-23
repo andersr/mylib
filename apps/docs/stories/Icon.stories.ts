@@ -9,10 +9,10 @@ const meta = {
 } satisfies Meta<typeof Icon>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof Icon>;
 
 export const Primary: Story = {
   args: {
-    name: "search",
+    iconName: "search",
   },
 };
