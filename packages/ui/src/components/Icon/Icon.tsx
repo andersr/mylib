@@ -1,12 +1,14 @@
 import { twMerge } from "tailwind-merge";
-// TODO: ensure info about using material symbols appears in type def file
 export interface IconProps {
   iconName: string;
   iconStyles?: string; // TODO: add instructions for how to get autocomplete or rename to className?
 }
 
 /**
- * Icons that use Material Symbols Icons - see https://fonts.google.com/icons
+ * Icon that uses Material Symbols Icons and Tailwind for styling
+ *
+ * @param iconName - use Material Symbols names, see https://fonts.google.com/icons
+ * @param iconStyles - use Tailwind styling, see https://tailwindcss.com/
  *
  * @example
  *

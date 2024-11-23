@@ -16,3 +16,10 @@ export const Primary: Story = {
     iconName: "search",
   },
 };
+
+export const Styled: Story = {
+  args: {
+    iconName: "search",
+    iconStyles: "text-blue-500 text-5xl",
+  },
+};
