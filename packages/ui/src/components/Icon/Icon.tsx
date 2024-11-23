@@ -1,7 +1,8 @@
 import { twMerge } from "tailwind-merge";
+// TODO: ensure info about using material symbols appears in type def file
 export interface IconProps {
-  name: string;
-  twStyle?: string;
+  iconName: string;
+  iconStyles?: string; // TODO: add instructions for how to get autocomplete or rename to className?
 }
 
 /**
@@ -9,16 +10,16 @@ export interface IconProps {
  *
  * @example
  *
- * <Icon name="search" twStyle="text-red-500 text-4xl"/>
+ * <Icon iconName="search" iconStyles="text-red-500 text-4xl"/>
  *
  */
 
-export function Icon({ name, twStyle }: IconProps) {
+export function Icon({ iconName, iconStyles }: IconProps) {
   return (
     <span
-      title={name}
-      className={twMerge("material-symbols-outlined", twStyle)}
-      dangerouslySetInnerHTML={{ __html: name }}
+      title={iconName}
+      className={twMerge("material-symbols-outlined", iconStyles)}
+      dangerouslySetInnerHTML={{ __html: iconName }}
     />
   );
 }
