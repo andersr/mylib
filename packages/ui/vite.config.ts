@@ -3,15 +3,17 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import dts from "vite-plugin-dts";
 import tailwindcss from "tailwindcss";
+// import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig(({ mode }) => {
   return {
     build: {
       minify: mode !== "development",
       lib: {
-        entry: resolve(__dirname, "./src/index.ts"),
+        entry: resolve(__dirname, "./src/main.ts"),
         name: "andersco-ui",
-        fileName: (format) => `index.${format}.js`,
+        formats: ["es", "cjs"],
+        fileName: (format) => `main.${format === "es" ? "mjs" : "cjs"}`,
       },
       rollupOptions: {
         external: ["react", "react-dom"],
