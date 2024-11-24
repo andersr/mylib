@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import dts from "vite-plugin-dts";
 import tailwindcss from "tailwindcss";
-import { libInjectCss } from "vite-plugin-lib-inject-css";
+// import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig(({ mode }) => {
   return {
@@ -12,7 +12,8 @@ export default defineConfig(({ mode }) => {
       lib: {
         entry: resolve(__dirname, "./src/main.ts"),
         name: "andersco-ui",
-        fileName: (format) => `main.${format}.js`,
+        formats: ["es", "cjs"],
+        fileName: (format) => `main.${format === "es" ? "mjs" : "cjs"}`,
       },
       rollupOptions: {
         external: ["react", "react-dom"],
@@ -26,7 +27,7 @@ export default defineConfig(({ mode }) => {
       sourcemap: true,
       emptyOutDir: true,
     },
-    plugins: [react(), libInjectCss(), dts()],
+    plugins: [react(), dts()],
     css: {
       postcss: {
         plugins: [tailwindcss],
