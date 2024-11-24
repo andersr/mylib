@@ -4,4 +4,5 @@ tmp
 **/dist
 **/*.log
 **/.env
-/apps/test-app
+/apps/sandbox
+/apps/playground
