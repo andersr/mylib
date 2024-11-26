@@ -7,9 +7,9 @@ export default defineConfig(({ mode }) => {
     build: {
       minify: mode !== "development",
       lib: {
-        entry: resolve(__dirname, "./src/index.ts"),
+        entry: resolve(__dirname, "./src/main.ts"),
         name: "andersco-utils",
-        fileName: (format) => `index.${format}.js`,
+        fileName: (format) => `main.${format}.js`,
       },
       sourcemap: true,
       emptyOutDir: true,
