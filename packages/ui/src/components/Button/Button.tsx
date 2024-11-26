@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 
+// TODO: component currently not being used by any external apps
 export interface ButtonProps {
   children: React.ReactNode;
   onClick: () => void;
