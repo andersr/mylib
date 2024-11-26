@@ -5,6 +5,7 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import configPrettier from "eslint-config-prettier";
 import pluginReact from "eslint-plugin-react";
+import pluginTsdoc from "eslint-plugin-tsdoc";
 
 export default tseslint.config(
   {
@@ -30,12 +31,18 @@ export default tseslint.config(
   },
   configPrettier,
   {
+    plugins: {
+      tsdoc: pluginTsdoc,
+    },
     languageOptions: {
       parserOptions: {
         projectService: {
           allowDefaultProject: ["app/docs/.storybook/*", "eslint.config.mjs"],
         },
       },
+    },
+    rules: {
+      "tsdoc/syntax": "warn",
     },
   }
 );
