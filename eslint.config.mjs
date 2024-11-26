@@ -1,29 +1,23 @@
-import globals from "globals";
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { includeIgnoreFile } from "@eslint/compat";
+import configPrettier from "eslint-config-prettier";
 import pluginReact from "eslint-plugin-react";
-import eslintConfigPrettier from "eslint-config-prettier";
-import json from "@eslint/json";
+import pluginTsdoc from "eslint-plugin-tsdoc";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const gitignorePath = path.resolve(__dirname, ".gitignore");
-
-/** @type {import('eslint').Linter.Config[]} */
-export default [
-  includeIgnoreFile(gitignorePath),
+export default tseslint.config(
   {
-    files: ["**/*.{js,ts,tsx,mjs,cjs}"],
-    languageOptions: { globals: globals.browser },
-    plugins: { json },
+    ignores: ["**/dist", "**/build", "**/*.js", "tmp"],
   },
   eslint.configs.recommended,
-  eslintConfigPrettier,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
   {
+    files: ["**/*.ts", "**/*.tsx"],
+    plugins: {
+      react: pluginReact,
+    },
     ...pluginReact.configs.flat.recommended,
     settings: {
       react: {
@@ -31,16 +25,24 @@ export default [
       },
     },
     rules: {
-      "react/no-unescaped-entities": "warn",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
     },
   },
+  configPrettier,
   {
-    files: ["**/*.json"],
-    ignores: ["*-lock.json"],
-    language: "json/json",
-    ...json.configs.recommended,
-    rules: {
-      "no-irregular-whitespace": "off",
+    plugins: {
+      tsdoc: pluginTsdoc,
     },
-  },
-];
+    languageOptions: {
+      parserOptions: {
+        projectService: {
+          allowDefaultProject: ["app/docs/.storybook/*", "eslint.config.mjs"],
+        },
+      },
+    },
+    rules: {
+      "tsdoc/syntax": "warn",
+    },
+  }
+);

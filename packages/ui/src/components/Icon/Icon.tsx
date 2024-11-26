@@ -1,20 +1,20 @@
 import { twMerge } from "tailwind-merge";
-export interface IconProps {
-  iconName: string;
-  iconStyles?: string; // TODO: add instructions for how to get autocomplete or rename to className?
-}
 
 /**
- * Icon that uses Material Symbols Icons and Tailwind for styling
- *
- * @param iconName - use Material Symbols names, see https://fonts.google.com/icons
- * @param iconStyles - use Tailwind styling, see https://tailwindcss.com/
+ * Icon component that displays Material Symbols Icons and Tailwind for styling
  *
  * @example
  *
  * <Icon iconName="search" iconStyles="text-red-500 text-4xl"/>
  *
  */
+export interface IconProps {
+  /** Use Material Symbols names for iconName, see https://fonts.google.com/icons */
+  iconName: string;
+
+  /** Use Tailwind styling for iconStyles, see https://tailwindcss.com/ */
+  iconStyles?: string;
+}
 
 export function Icon({ iconName, iconStyles }: IconProps) {
   return (
