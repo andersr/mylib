@@ -2,19 +2,19 @@
   "author": "Anders Ramsay <anders@anders.co> (http://github.com/andersr)",
   "description": "A collection of commonly used utils, components, and more.",
   "devDependencies": {
-    "@changesets/cli": "^2.27.9",
+    "@changesets/cli": "^2.27.10",
     "@eslint/compat": "^1.2.3",
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.15.0",
     "@eslint/json": "^0.6.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsonc": "^2.18.1",
+    "eslint-plugin-jsonc": "^2.18.2",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-tsdoc": "^0.4.0",
     "globals": "^15.12.0",
-    "husky": "^9.1.6",
+    "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "typedoc": "^0.26.11",
-    "typescript-eslint": "^8.13.0"
+    "typescript-eslint": "^8.16.0"
   },
   "engines": {
     "node": ">=20.17.0 < 21",
